@@ -1,0 +1,88 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoOccurrence",
+      "request": "launch",
+      "mainClass": "demo.DemoOccurrence",
+      "projectName": "hanlp-server"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoKeyword",
+      "request": "launch",
+      "mainClass": "demo.DemoKeyword",
+      "projectName": "hanlp-server"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MongoJDBC",
+      "request": "launch",
+      "mainClass": "dao.MongoJDBC",
+      "projectName": "hanlp-server"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Main",
+      "request": "launch",
+      "mainClass": "app.Main",
+      "projectName": "hanlp-server"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoBasic",
+      "request": "launch",
+      "mainClass": "demo.DemoBasic",
+      "projectName": "HanlpServer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoNameRecognize",
+      "request": "launch",
+      "mainClass": "demo.DemoNameRecognize",
+      "projectName": "HanlpServer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoCRF",
+      "request": "launch",
+      "mainClass": "demo.DemoCRF",
+      "projectName": "HanlpServer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Demo2",
+      "request": "launch",
+      "mainClass": "demo.Demo2",
+      "projectName": "HanlpServer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Demo1",
+      "request": "launch",
+      "mainClass": "demo.Demo1",
+      "projectName": "HanlpServer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Demo",
+      "request": "launch",
+      "mainClass": "demo.Demo",
+      "projectName": "HanlpServer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - demo1",
+      "request": "launch",
+      "mainClass": "demo1",
+      "projectName": "HanlpServer"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - App",
+      "request": "launch",
+      "mainClass": "app.App",
+      "projectName": "HanlpServer"
+    }
+  ]
+}

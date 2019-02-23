@@ -1,0 +1,7 @@
+{
+  "java.dependency.packagePresentation": "flat",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "files.exclude": {
+  },
+  
+}
