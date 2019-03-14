@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - DemoSentimentAnalysis",
+      "request": "launch",
+      "mainClass": "demo.DemoSentimentAnalysis",
+      "projectName": "hanlp-server"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoTextClassification",
+      "request": "launch",
+      "mainClass": "demo.DemoTextClassification",
+      "projectName": "hanlp-server"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DemoTextClassificationFMeasure",
+      "request": "launch",
+      "mainClass": "demo.DemoTextClassificationFMeasure",
+      "projectName": "hanlp-server"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - DemoOccurrence",
       "request": "launch",
       "mainClass": "demo.DemoOccurrence",

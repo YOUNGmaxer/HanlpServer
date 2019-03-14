@@ -48,6 +48,7 @@ public class Hanlp {
   @Produces(MediaType.APPLICATION_JSON)
   public HashMap<String, HashMap<String, Integer>> doSegmentByRid(@PathParam("rid") String rid) {
     final String DATABASE = "comments";
+    final String FILTER_STR = "用户未点评，系统默认好评。";
     Object content = "";
     // 词频计数器
     // HashMap<String, Integer> wordCounter = new HashMap<String, Integer>();
@@ -63,6 +64,10 @@ public class Hanlp {
     while (mongoCursor.hasNext()) {
       content = mongoCursor.next().get("content");
       System.out.println(content);
+      // 过滤系统默认好评的评论
+      if (content.equals(FILTER_STR)) {
+        continue;
+      }
       // 分词
       List<Term> termList = HanLP.segment(content.toString());
 
