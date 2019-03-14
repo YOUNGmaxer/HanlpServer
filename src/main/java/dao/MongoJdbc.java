@@ -1,22 +1,36 @@
 package dao;
 
 import org.bson.Document;
-import com.mongodb.MongoClient;
+
+// import com.mongodb.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoClient;
+// import com.mongodb.MongoClientOptions;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.FindIterable;
 
+import com.mongodb.MongoCredential;
+// import com.mongodb.ServerAddress;
+
 public class MongoJdbc {
-  private static final String MONGO_URI = "106.13.70.140";
-  private static final int MONGO_PORT = 27017;
+  private final String IP = "106.13.70.140";
+  private final int PORT = 23333;
+  // private static final String USER = "root";
+  // private static final char[] PWD = "688232max".toCharArray();
+  // private static final String SOURCE = "admin";
+  private String MONGO_URL = "mongodb://root:688232max@"+ IP + ":" + PORT + "/?authSource=admin";
   private MongoClient mongoClient = null;
   private MongoDatabase mongoDatabase = null;
+  // private MongoCredential credential = MongoCredential.createCredential(USER, SOURCE, PWD);
 
   public MongoJdbc() {
-    try {
+  try {
       // 连接 mongodb
-      mongoClient = new MongoClient(MONGO_URI, MONGO_PORT);
+      // mongoClient = new MongoClient(IP, PORT);
+      // mongoClient = new MongoClient(new ServerAddress(this.IP, this.PORT), this.credential, new MongoClientOptions.Builder().build());
+      mongoClient = MongoClients.create(this.MONGO_URL);
     } catch(Exception e) {
       System.err.println(e);
     }
