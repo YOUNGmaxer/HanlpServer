@@ -15,12 +15,13 @@ import com.mongodb.MongoCredential;
 // import com.mongodb.ServerAddress;
 
 public class MongoJdbc {
-  private final String IP = "106.13.70.140";
-  private final int PORT = 23333;
+  // private final String IP = "106.13.70.140";  // 迁移数据库到新服务器
+  private final String IP = "114.115.130.213";
+  private final int PORT = 27017;
   // private static final String USER = "root";
   // private static final char[] PWD = "688232max".toCharArray();
   // private static final String SOURCE = "admin";
-  private String MONGO_URL = "mongodb://root:688232max@"+ IP + ":" + PORT + "/?authSource=admin";
+  private String MONGO_URL = "mongodb://realroot:688232max@"+ IP + ":" + PORT + "/?authSource=admin";
   private MongoClient mongoClient = null;
   private MongoDatabase mongoDatabase = null;
   // private MongoCredential credential = MongoCredential.createCredential(USER, SOURCE, PWD);
